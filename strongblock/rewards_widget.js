@@ -58,7 +58,7 @@ async function collectData() {
 
         // For each type of node (e.g. Ethereum, Polygon) add rewards from pool
         for (let {detail} of rewardsData["portfolio_item_list"]) {
-            strngrRewards += detail['token_list'][0]['amount']
+            strngrRewards += detail['supply_token_list'][0]['amount']
         }
 
         // Save StrongBlock logo url
